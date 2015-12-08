@@ -1,0 +1,136 @@
+Introduccion:
+
+El rapido avance y evolucion de las tecnologias en el area de la computacion obligan a la necesidad de implementar sistemas que aprovechen al maximo todos los recursos de uno o varios sistemas para garantizar de esa forma un rendimiento optimo de la ejecucion de cualquier proceso o tarea. Dicho esto, con este trabajo se presentaran las diferentes definiciones y conceptos basicos asi como ejemplos en los cuales se aplican cada uno de los aspectos de la computacion relacionada a clusters.
+
+1 ) Que es una supercomputadora?
+
+Las supercomputadoras son computadoras de alto procesamiento utilizadas para aplicaciones especializadas que requieren de gran cantidad de calculos. Por ejemplo, el pronostico del clima, animaciones graficas, investigaciones de energia nuclear y exploracion petrolera.
+
+Como se miden su velocidad ?
+
+La velocidad de una supercomputadora no se mide en instrucciones por segundo (MIPS), las supercomputadoras se miden en operaciones de punto flotante por segundo (FLOPS)
+
+Explique la taxanomia de Flynn
+
+La taxonomia de Flynn es una clasificacion de arquitecturas de computadoras propuesta por Michael FLynn en 1972, se basa en el numero de instrucciones concurrentes y en los flujos de datos disponibles en la arquitectura
+
+Las cuatro categorias son:
+
+(SISD) Una instruccion, un dato
+	Es un computador secuencial que no aprovecha el paralelismo en las instrucciones ni en flujo de datos
+(MISD) Multiples instrucciones, un dato
+	Cada instruccion opera bajo el control de multiples flujo de datos
+(SIMD) Una instruccion, multiples datos
+	Explota multiples flujos de datos contra una single instruccion para realizar operaciones que pueden ser paralelizadas
+(MIMD) Multiples instrucciones, multiples datos
+	Multiples procesadores autonomos ejecutan simultaneamentes diferentes instrucciones sobre diferentes datos
+
+2) Defina:
+
+a) Computación Monolítica
+	Es la forma mas sencilla de computacion, consta de un unico computador tal como un computador personal o PC. Este computador no esta conectada a una red y por ello utiliza los recursos a los cuales tiene acceso de forma inmediata.
+	En su forma mas basica es utilizada por un solo usuario, aunque puede ser usada por varios usuarios de manera concurrente a través de un sistema llamado tiempo compartido, en el que el computador proporciona un recurso centralizado llamado mainframe y los usuarios podian interactuar con el utilizando los llamados teminales.
+
+b) Computación Distribuida
+	Hace uso de varios computadores conectados entre si a través de un red, cada uno de los cuales tiene su propio procesador y otros recursos. Un usuario que utilice una estacion de trabajo puede usar los recursos del computador local al que la estacion de trabajo esta conectada. Además, a traves de la interaccion entre el computador local y los computadores remotos, el usuario tambien puede hacer uso de los ultimos. Un ejemplo de computacion distribuida seria la Web.
+
+c) Computación Paralela.
+	Es similar a la computacion distribuida, utiliza mas de un procesador simultaneamente para ejecutar un unico programa. Se utiliza para resolver problemas que de manera secuencial serian imposibles, y en problemas de computacion cientifica en gran escala, en areas tales como la biologia, la aeronautica, la prediccion atmosferica y el diseño de semiconductores
+
+d) Computación Cooperativa.
+	Consiste en que multiplos equipos, programas o recursos a través de internet, colaboran para realizar una tarea o proyecto. Ejemplos de estos proyectos son la Busqueda de Inteligencia Extraterrestre o SETI, el P2P, entre otros.
+
+Establezca diferencias entre computadores ligeramente acoplados y computadores fuertemente acoplados.
+
+Los sistemas con multiples procesadores pueden clasificarse según nivel de acoplamiento, esto indica su capacidad de compartir recursos y la naturaleza de la intercomunicacion de los distintos procesadores.
+
+Los computadores ligeramente acoplados estan conectados a través de una red de alta velocidad donde cada computador es autonomo a diferencia de los fuertemente acoplados que constan de multiples procesadores sincronizados.
+
+Otra diferencia es que los fuertemente acoplados tienen una memoria comun a la que los procesadores pueden acceder en cambio los ligeramente acoplados cada computador tiene una memoria independiente.
+
+Los sistemas fuertemente acoplados comparten el acceso a los dispositivos de entrada y salida a diferencia de los ligeramente acoplados.
+
+3) Defina middleware. Describa las características para los siguientes paradigmas de computación distribuida:
+
+Middleware hace referencia al software que actúa como intermediario entre procesos independientes. Esto es, software que provee servicios mas alla de esos que provee el sistema operativo. Esto hace que sea mas facil para los desarrolladores de software de manera que el desarrollador puede concentrarse en la funcion principal de la aplicacion y no en problemas relacionados con comunacion entre el hardware y el software.
+
+a) Paso de Mensajes
+	Este paradigma consiste en la comunicacion de procesos a través de un receptor y un emisor, este paradigma es fundamental para la computacion distribuida. Un proceso envía un mensaje que representa una peticion. El mensaje se entrega a un receptor, que procesa la peticion y envía un mensaje como respuesta.
+
+b) Objetos Distribuidos
+	Esto es una extension del desarrollo de software orientado a objetos. En este paradigma las aplicaciones acceden a objetos distribuidos en una red, y a su vez los objetos proporcionan metodos, los cuales proporcionan servicios a la aplicacion.
+
+c) Agentes móviles
+	Consiste en el uso de agentes moviles que son programas u objetos transportables que cumplen con un determinado itinerario. En cada parada, el agente accede a los recursos o servicios necesarios y realiza las tareas correspondientes para completar su mision.
+
+d) Aplicaciones colaborativas (groupware)
+	Los procesos pueden participar en un grupo que pueden colaborar a través de multidifusion para enviar los datos a cada uno de los participantes del grupo colaborativo.
+
+4) Describa cuatro de las siguientes características de las aplicaciones distribuidas: 
+
+a) Heterogeneidad
+	Es la diversidad y diferencia, se da tanto en las redes, en el hardware de ordenadores, sistemas operativos, lenguajes de programacion, y en muchas otras cosas que hacen necesario que sean regulados a través de estandares como por ejemplo el cable USB. 
+	En los sistemas distribuidos hay software que gestiona la heterogeneidad en forma de algun middleware.
+
+b) Extensibilidad
+	Es la capacidad de extender o ampliar una aplicacion ya sean por ejemplo ampliar la capacidad de servicios, añadir nuevos recursos y servicios, y modificar los ya existentes por otros mas capaces.	
+
+c) Escalabilidad
+	Un sistema escalable es aquel que tenga la capacidad para conservar su efectividad a pesar de un gran incremento en la demanda de ese sistema, ya sea el numero de recursos o el numero de usuarios por ejemplo.
+	Para que un sistema pueda ser escalable tiene que ser extensible.
+
+d) Concurrencia
+	Esta es una de las caracteristicas basicas de los sistemas distribuidos, la capacidad de compartir recursos. Mediante esto las organizaciones pueden utilizar sus recursos de forma efectiva.
+
+5) Defina programación concurrente. 
+
+Se habla de concurrencia cuando ocurren varios sucesos de manera contemporánea. De esta forma la programacion concurrente del estudio de las nociones de ejecucion concurrente, asi como sus problemas de comunicacion y sincronizacion.
+
+Explique:
+a) Comunicación entre Procesos
+	Los programas concurrentes requieren de comunicacion entre los procesos para que los hilos que compiten por un accesos exclusivo a los recursos compartidos o para intercambiar datos. En ambos casos es necesario que los hilos se comuniquen para evitar conflictos.
+
+b) Sincronización entre Eventos
+
+	La programacion concurrente utiliza metodos de sincronizacion para los procesos que compiten por el acceso a los recursos compartidos, esto hace que el acceso sea de forma coordinada a los recursos y a los elementos de comunicacion compartidos.
+
+c) Interbloqueos y Temporizadores
+
+	El interbloqueo es un error que ocurre en entornos concurrentes cuando dos o mas procesos entran en un estado que imposibilita a cualquiera de ellos salir del estado en que se encuentra. Esto es porque cada proceso adquiere algun recurso que necesita en ese momento pero que a su vez espera a que se liberenn otros recursos que han sido detenidos por otros procesos.
+
+	Un temporizador se utiliza para notificar si un proceso ha transcurrido en un cierto intervalo de tiempo o se ha alcanzado una hora determinada
+
+d) Soporte de C++11, Java 8 y un tercer lenguaje de programación, de su preferencia, a la programación concurrente.
+	
+	C++11 trae en su libreria estandard soporte para la programacion concurrente asi como Java 8 a partir de la version 5 tambien tiene una API dirigida a ésta.
+	En Python las aplicaciones concurrentes no se crean a través de hilos sino a través de procesos, esto es porque Python realmente no crea hilos sino que simula  el comportamiento multihilo a través de la creacion de un monton de procesos hijos.
+
+e) Soporte del hardware actual y sistemas operativos a la programación concurrente.
+
+	Los entornos habituales en lo que estan soportados la programacion concurrente son el monoprocesador con multiprogramacion, multicomputador con memoria compartida y distribuido. El sistema operativo se encarga de todas tareas que abarcan para realizar y dar soporte a la programacion concurrente, como por ejemplo la sincronizacion y comunicacion entre procesos.
+
+# Bibliografia
+http://www.webopedia.com/TERM/S/supercomputer.html
+https://en.wikipedia.org/wiki/Supercomputer
+http://www.webopedia.com/TERM/F/Flynns_taxonomy.html
+https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
+
+http://www.infor.uva.es/~cllamas/sd/Liu-c1.pdf
+http://ocw.uv.es/ingenieria-y-arquitectura/sistemas-electronicos-para-el-tratamiento-de-la-informacion/seti_materiales/seti9_ocw.pdf
+
+https://en.wikipedia.org/wiki/Middleware
+http://laurel.datsi.fi.upm.es/~ssoo/LIBRO
+
+http://www.unirioja.es/cu/fgarcia/sd/pub/teo/01-IntroduccionALaComputacionDistribuida.pdf
+
+http://www2.ulpgc.es/hege/almacen/download/20/20233/tema1.pdf
+http://www.laminfo.com/blog/archivos/__Teoria_1_Programacion_Concurrente.pdf
+http://www.sc.ehu.es/acwlaroa/SO2/Apuntes/Cap2.pdf
+http://www.ctr.unican.es/asignaturas/mc_procon/doc/procon_ii_08-temporizadores_3en1.pdf
+
+https://www.classes.cs.uchicago.edu/archive/2013/spring/12300-1/labs/lab6/
+http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/
+https://wiki.python.org/moin/Concurrency/
+http://blog.buguroo.com/concurrencia-real-en-python/
+
+http://www.ctr.unican.es/asignaturas/procodis_3_ii/doc/procodis_1_01.pdf
